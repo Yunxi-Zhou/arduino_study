@@ -4,6 +4,7 @@
 //function declaration
 void setup_pin();
 void loop_pin();
+void close_pin();
 
 
 #endif

@@ -13,3 +13,7 @@ void loop_pin() {
     digitalWrite(5, LOW);
     delay(delayTime);
 }
+
+void close_pin() {
+    digitalWrite(5,LOW);
+}
