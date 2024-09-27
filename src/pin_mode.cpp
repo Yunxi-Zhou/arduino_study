@@ -4,12 +4,12 @@
 int delayTime = 1000;
 
 void setup_pin() {
-    pinMode(13, OUTPUT); //LED_BUILTIN
+    pinMode(5, OUTPUT); //LED_BUILTIN
 }
 
 void loop_pin() {
-    digitalWrite(13, HIGH);
+    digitalWrite(5, HIGH);
     delay(delayTime);
-    digitalWrite(13, LOW);
+    digitalWrite(5, LOW);
     delay(delayTime);
 }
