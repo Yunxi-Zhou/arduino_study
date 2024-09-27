@@ -1,16 +1,19 @@
 #include <Arduino.h>
-#include "hello/hello.h"
+//#include "hello.h" //first program hello world
+#include "pin_mode.h"
+
 // put function declarations here:
-//first program hello world
 
 void setup() {
   // put your setup code here, to run once:
-  hello();
+  //hello();
+  setup_pin();
   
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  loop_pin();
 }
 
 // put function definitions here:
