@@ -12,9 +12,7 @@ void lightOnOff() {
     
     if (butt == HIGH){
         digitalWrite(5,HIGH);
-        delay(1000);
     } else {
         digitalWrite(5,LOW);
-        delay(1000);
     }
 }
