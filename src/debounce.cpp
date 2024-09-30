@@ -7,7 +7,7 @@ pressing the button once may cause unpredictable results.
 #include "debounce.h"
 
 const int buttonPin = 2;
-const int ledPin = 5;
+const int ledPin = 13;
 
 int ledState = HIGH;
 int buttonState;
@@ -28,23 +28,25 @@ void fun_debounce() {
 
     // if the switch changed, due to noise or pressing:
     if (reading != lastButtonState) {
+        //reset the debouncing timer
         lastDebounceTime = millis();
     }
-
+    //如果时间超过过去抖动延迟，认为按钮状态已经稳定
     if ((millis() - lastDebounceTime) > debounceDelay) {
         //if the button state has changed
         if (reading != buttonState) {
             buttonState = reading;
+            
+            //只有在按钮按下HIGH的时候，才切换LED状态
             if (buttonState == HIGH) {
                 ledState = !ledState;
             }
         }
 
     }
-
-    //set the LED
-    digitalWrite(ledPin, ledState);
-
+    //保存这次按钮状态
     lastButtonState = reading;
+    //设置LED状态
+    digitalWrite(ledPin, ledState);
 }
 
