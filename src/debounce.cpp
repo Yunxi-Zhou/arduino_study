@@ -4,14 +4,15 @@ make sure the pushbutton is definitely pressed. Without debouncing,
 pressing the button once may cause unpredictable results.
 */
 #include <Arduino.h>
+#include "globals.h"
 #include "debounce.h"
 
 const int buttonPin = 2;
 const int ledPin = 13;
 
 int ledState = HIGH;
-int buttonState;
-int lastButtonState = LOW;
+int buttonState = 0;
+int lastButtonState = 0;
 
 unsigned long lastDebounceTime = 0;
 unsigned long debounceDelay = 50;
