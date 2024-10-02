@@ -4,7 +4,8 @@
 //#include "pin_button.h"
 //#include "debounce.h"
 //#include "input_pullup.h"
-#include "rgb.h"
+//#include "rgb.h"
+#include "digital_input.h"
 // put function declarations here:
 
 void setup() {
@@ -16,7 +17,8 @@ void setup() {
   // Serial.begin(9600);
   //set_pullup();
   //set_detection();
-  set_rgb();
+  //set_rgb();
+  set_digital();
 }
 
 void loop() {
@@ -29,7 +31,8 @@ void loop() {
   // delay(1000);
   //loop_pullup();
   //loop_detection();
-  loop_rgb();
+  //loop_rgb();
+  loop_digital();
 }
 
 // put function definitions here:
