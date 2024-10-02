@@ -4,7 +4,7 @@
 //#include "pin_button.h"
 //#include "debounce.h"
 //#include "input_pullup.h"
-#include "edge_detection.h"
+#include "rgb.h"
 // put function declarations here:
 
 void setup() {
@@ -15,7 +15,8 @@ void setup() {
   //set_debounce();
   // Serial.begin(9600);
   //set_pullup();
-  set_detection();
+  //set_detection();
+  set_rgb();
 }
 
 void loop() {
@@ -27,7 +28,8 @@ void loop() {
   // Serial.println("Hello from Arduino!");
   // delay(1000);
   //loop_pullup();
-  loop_detection();
+  //loop_detection();
+  loop_rgb();
 }
 
 // put function definitions here:
