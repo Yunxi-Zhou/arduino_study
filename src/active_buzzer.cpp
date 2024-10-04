@@ -5,6 +5,7 @@ int buzzer = 11; //set the pin of the active buzzer
 
 void set_buzzer() {
     pinMode(buzzer, OUTPUT);
+    Serial.begin(9600); // initialize the serial port.
 }
 
 void loop_buzzer() {
@@ -21,12 +22,18 @@ void loop_buzzer() {
 
         // activate the active buzzer
         digitalWrite(buzzer, HIGH);
+        Serial.print("Buzzing at duration: "); 
+        Serial.println(sound_duration);
         delay(sound_duration); // wait for sound_duration ms
+
         // deactivate the active buzzer
         digitalWrite(buzzer, LOW);
         delay(sound_duration); // wait for sound_duration ms
     }
-    // activate the active buzzer
+
+    // activate the active buzzer and continue 5 seconds
+    Serial.println("Buzzing continuously for 5 second...");
     digitalWrite(buzzer, HIGH);
     delay(5000); // keep playing sound for 5 seconds
+    digitalWrite(buzzer, LOW);
 }

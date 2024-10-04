@@ -5,7 +5,7 @@
 //#include "debounce.h"
 //#include "input_pullup.h"
 //#include "rgb.h"
-#include "digital_input.h"
+//#include "digital_input.h"
 //#include "active_buzzer.h"
 
 
@@ -21,7 +21,7 @@ void setup() {
   //set_pullup();
   //set_detection();
   //set_rgb();
-  set_digital();
+  //set_digital();
   //set_buzzer();
 }
 
@@ -36,7 +36,7 @@ void loop() {
   //loop_pullup();
   //loop_detection();
   //loop_rgb();
-  loop_digital();
+  //loop_digital();
   //loop_buzzer();
 }
 
