@@ -7,6 +7,7 @@
 //#include "rgb.h"
 //#include "digital_input.h"
 //#include "active_buzzer.h"
+#include "ball_switch.h"
 
 
 // put function declarations here:
@@ -23,6 +24,7 @@ void setup() {
   //set_rgb();
   //set_digital();
   //set_buzzer();
+  set_ball();
 }
 
 void loop() {
@@ -38,6 +40,7 @@ void loop() {
   //loop_rgb();
   //loop_digital();
   //loop_buzzer();
+  loop_ball();
 }
 
 // put function definitions here:
