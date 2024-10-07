@@ -8,7 +8,8 @@
 //#include "digital_input.h"
 //#include "active_buzzer.h"
 //#include "ball_switch.h"
-#include "eight_led.h"
+//#include "eight_led.h"
+#include "serial_monitor.h"
 
 // put function declarations here:
 
@@ -25,7 +26,8 @@ void setup() {
   //set_digital();
   //set_buzzer();
   //set_ball();
-  set_chip();
+  //set_chip();
+  set_monitor();
 }
 
 void loop() {
@@ -42,7 +44,8 @@ void loop() {
   //loop_digital();
   //loop_buzzer();
   //loop_ball();
-  loop_chip();
+  // loop_chip();
+  loop_monitor();
 }
 
 // put function definitions here:
