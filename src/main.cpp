@@ -11,7 +11,8 @@
 // #include "eight_led.h"
 // #include "serial_monitor.h"
 // #include "photocell.h"
-#include "servo_s.h"
+// #include "servo_s.h"
+#include "ultrasonic_sensor.h"
 
 // put function declarations here:
 
@@ -31,7 +32,8 @@ void setup() {
   // set_chip();
   // set_monitor();
   // set_photocell();
-  set_servo();
+  // set_servo();
+  set_ultrasonic();
 }
 
 void loop() {
@@ -52,7 +54,8 @@ void loop() {
   // loop_monitor();
   // loop_photocell();
   // loop_servo();
-  serial_servo();
+  // serial_servo();
+  loop_ultrasonic();
 }
 
 // put function definitions here:
