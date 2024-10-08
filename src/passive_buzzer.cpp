@@ -17,9 +17,10 @@ void loop_passive() {
         tone(8, melody[thisNote], duration);
 
         // output the voice after several minutes
-        delay(1000);
         Serial.print("melody at duration: ");
         Serial.println(melody[thisNote]);
+        delay(1000);
+        
     }
 
     //restart after two seconds
