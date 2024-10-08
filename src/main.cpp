@@ -10,7 +10,8 @@
 // #include "ball_switch.h"
 // #include "eight_led.h"
 // #include "serial_monitor.h"
-#include "photocell.h"
+// #include "photocell.h"
+#include "servo_s.h"
 
 // put function declarations here:
 
@@ -29,7 +30,8 @@ void setup() {
   // set_ball();
   // set_chip();
   // set_monitor();
-  set_photocell();
+  // set_photocell();
+  set_servo();
 }
 
 void loop() {
@@ -48,7 +50,9 @@ void loop() {
   // loop_ball();
   // loop_chip();
   // loop_monitor();
-  loop_photocell();
+  // loop_photocell();
+  // loop_servo();
+  serial_servo();
 }
 
 // put function definitions here:
