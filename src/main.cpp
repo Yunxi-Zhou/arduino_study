@@ -13,7 +13,8 @@
 // #include "photocell.h"
 // #include "servo_s.h"
 // #include "ultrasonic_sensor.h"
-#include "temp_humidity.h"
+// #include "temp_humidity.h"
+#include "joystick.h"
 
 // put function declarations here:
 
@@ -35,7 +36,8 @@ void setup() {
   // set_photocell();
   // set_servo();
   // set_ultrasonic();
-  set_humidity();
+  // set_humidity();
+  set_joy();
 }
 
 void loop() {
@@ -58,7 +60,8 @@ void loop() {
   // loop_servo();
   // serial_servo();
   // loop_ultrasonic();
-  loop_humidity();
+  // loop_humidity();
+  loop_joy();
 }
 
 // put function definitions here:
