@@ -12,7 +12,8 @@
 // #include "serial_monitor.h"
 // #include "photocell.h"
 // #include "servo_s.h"
-#include "ultrasonic_sensor.h"
+// #include "ultrasonic_sensor.h"
+#include "temp_humidity.h"
 
 // put function declarations here:
 
@@ -33,7 +34,8 @@ void setup() {
   // set_monitor();
   // set_photocell();
   // set_servo();
-  set_ultrasonic();
+  // set_ultrasonic();
+  set_humidity();
 }
 
 void loop() {
@@ -55,7 +57,8 @@ void loop() {
   // loop_photocell();
   // loop_servo();
   // serial_servo();
-  loop_ultrasonic();
+  // loop_ultrasonic();
+  loop_humidity();
 }
 
 // put function definitions here:
