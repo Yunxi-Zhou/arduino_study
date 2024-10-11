@@ -14,7 +14,8 @@
 // #include "servo_s.h"
 // #include "ultrasonic_sensor.h"
 // #include "temp_humidity.h"
-#include "joystick.h"
+// #include "joystick.h"
+#include "ir_receiver.h"
 
 // put function declarations here:
 
@@ -37,7 +38,8 @@ void setup() {
   // set_servo();
   // set_ultrasonic();
   // set_humidity();
-  set_joy();
+  // set_joy();
+  set_ir();
 }
 
 void loop() {
@@ -61,7 +63,8 @@ void loop() {
   // serial_servo();
   // loop_ultrasonic();
   // loop_humidity();
-  loop_joy();
+  // loop_joy();
+  loop_ir();
 }
 
 // put function definitions here:
