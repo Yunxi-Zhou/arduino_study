@@ -15,7 +15,8 @@
 // #include "ultrasonic_sensor.h"
 // #include "temp_humidity.h"
 // #include "joystick.h"
-#include "ir_receiver.h"
+// #include "ir_receiver.h"
+#include "lcd_display.h"
 
 // put function declarations here:
 
@@ -39,7 +40,8 @@ void setup() {
   // set_ultrasonic();
   // set_humidity();
   // set_joy();
-  set_ir();
+  // set_ir();
+  set_lcd();
 }
 
 void loop() {
@@ -64,7 +66,6 @@ void loop() {
   // loop_ultrasonic();
   // loop_humidity();
   // loop_joy();
-  loop_ir();
+  // loop_ir();
+  loop_lcd();
 }
-
-// put function definitions here:
