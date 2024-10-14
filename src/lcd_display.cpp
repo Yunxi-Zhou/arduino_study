@@ -25,16 +25,21 @@ void set_lcd() {
     // set up the LCD's number of columns and rows:
     lcd.begin(16,2);
     // print a message to the LCD
-    lcd.print("Hello, World!");
+    lcd.setCursor(0,0);
+    lcd.print("[69,88,67,69,80,");
+
+    lcd.setCursor(0,1);
+    lcd.print("84,70,79,82,85]");
+
 
     Serial.begin(9600);
 }
 
 void loop_lcd() {
     // set the cursor to column 0, line 1
-    lcd.setCursor(0, 1);
+    // lcd.setCursor(0, 1);
     // print the number of seconds since reset
-    lcd.print(millis() / 1000);
+    // lcd.print(millis() / 1000);
     
     //send time through serial
     Serial.print("Time: ");
