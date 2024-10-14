@@ -19,7 +19,8 @@
 // #include "lcd_display.h"
 // #include "thermometer.h"
 // #include "segment_display.h"
-#include "four_segment.h"
+// #include "four_segment.h"
+#include "dc_motor.h"
 
 // put function declarations here:
 
@@ -47,7 +48,8 @@ void setup() {
   // set_lcd();
   // set_thermometer();
   // set_segment();
-  set_four();
+  // set_four();
+  set_dc();
 }
 
 void loop() {
@@ -76,6 +78,7 @@ void loop() {
   // loop_lcd();
   // loop_thermometer();
   // loop_segment();
-  loop_four();
+  // loop_four();
+  loop_dc();
 
 }
