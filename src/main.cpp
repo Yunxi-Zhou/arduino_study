@@ -18,7 +18,8 @@
 // #include "ir_receiver.h"
 // #include "lcd_display.h"
 // #include "thermometer.h"
-#include "segment_display.h"
+// #include "segment_display.h"
+#include "four_segment.h"
 
 // put function declarations here:
 
@@ -45,7 +46,8 @@ void setup() {
   // set_ir();
   // set_lcd();
   // set_thermometer();
-  set_segment();
+  // set_segment();
+  set_four();
 }
 
 void loop() {
@@ -73,6 +75,7 @@ void loop() {
   // loop_ir();
   // loop_lcd();
   // loop_thermometer();
-  loop_segment();
+  // loop_segment();
+  loop_four();
 
 }
