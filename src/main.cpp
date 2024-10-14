@@ -16,8 +16,9 @@
 // #include "temp_humidity.h"
 // #include "joystick.h"
 // #include "ir_receiver.h"
-#include "lcd_display.h"
+// #include "lcd_display.h"
 // #include "thermometer.h"
+#include "segment_display.h"
 
 // put function declarations here:
 
@@ -42,8 +43,9 @@ void setup() {
   // set_humidity();
   // set_joy();
   // set_ir();
-  set_lcd();
+  // set_lcd();
   // set_thermometer();
+  set_segment();
 }
 
 void loop() {
@@ -69,6 +71,8 @@ void loop() {
   // loop_humidity();
   // loop_joy();
   // loop_ir();
-  loop_lcd();
+  // loop_lcd();
   // loop_thermometer();
+  loop_segment();
+
 }
