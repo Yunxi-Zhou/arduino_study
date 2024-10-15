@@ -21,7 +21,8 @@
 // #include "segment_display.h"
 // #include "four_segment.h"
 // #include "dc_motor.h"
-#include "relay.h"
+// #include "relay.h"
+#include "steppers.h"
 
 // put function declarations here:
 
@@ -51,7 +52,8 @@ void setup() {
   // set_segment();
   // set_four();
   // set_dc();
-  set_relay();
+  // set_relay();
+  set_stepper();
 }
 
 void loop() {
@@ -82,6 +84,7 @@ void loop() {
   // loop_segment();
   // loop_four();
   // loop_dc();
-  loop_relay();
+  // loop_relay();
+  loop_stepper();
 
 }
